@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  /* --- Paleta de Colores --- */
+  
+  /* Azul Marino Profundo (Navy) */
+  --color-vm-navy: #001E62;
+  
+  /* Dorado Vibrante (Gold) */
+  --color-vm-gold: #E1C233;
+  
+  /* Dorado Oscuro (Para Hovers) */
+  --color-vm-gold-hover: #C5A92D;
+  
+  /* Azul Claro / Grisáceo (Para detalles) */
+  --color-vm-light-blue: #5D8AA8;
+
+  /* Blanco Azulado (Para fondos suaves) */
+  --color-vm-light: #F4F7FB;
+
+  /* --- Tipografía --- */
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem; 
+}
