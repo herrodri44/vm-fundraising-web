@@ -36,7 +36,6 @@ const ContactForm = () => {
         <h2 className="text-3xl font-bold text-vm-navy text-center mb-10">Contáctanos</h2>
         
         <div className="bg-white p-8 rounded-xl shadow-xl">
-          {/* IMPORTANTE: name="contact" y data-netlify="true" */}
           <form 
             name="contact" 
             method="POST" 
@@ -66,7 +65,6 @@ const ContactForm = () => {
               <textarea name="message" rows="4" required className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-vm-navy"></textarea>
             </div>
 
-            {/* Checkbox Legal - CRUCIAL PARA ESPAÑA */}
             <div className="mb-6 flex items-start">
               <input 
                 type="checkbox" 
@@ -80,6 +78,7 @@ const ContactForm = () => {
                 Entiendo que mis datos se usarán para responder a esta consulta.
               </label>
             </div>
+            <div data-netlify-recaptcha="true"></div>
 
             <button 
               type="submit" 
