@@ -40,9 +40,16 @@ const ContactForm = () => {
             name="contact" 
             method="POST" 
             data-netlify="true" 
+            data-netlify-honeypot="bot-field"
             onSubmit={handleSubmit}
           >
             <input type="hidden" name="form-name" value="contact" />
+
+            <p className="hidden">
+              <label>
+                <input name="bot-field" />
+              </label>
+            </p>
             
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               <div>
