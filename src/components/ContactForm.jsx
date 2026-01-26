@@ -1,8 +1,34 @@
 // src/components/ContactForm.jsx
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const ContactForm = () => {
   const [agreed, setAgreed] = useState(false);
+  const navigate = useNavigate();
+
+  const encode = (data) => {
+    return Object.keys(data)
+      .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...data }),
+    })
+      .then(() => {
+        navigate("/success");
+      })
+      .catch((error) => alert("Hubo un error al enviar: " + error));
+  };
 
   return (
     <section id="contacto" className="py-20 bg-vm-light">
@@ -11,7 +37,12 @@ const ContactForm = () => {
         
         <div className="bg-white p-8 rounded-xl shadow-xl">
           {/* IMPORTANTE: name="contact" y data-netlify="true" */}
-          <form name="contact" method="POST" data-netlify="true" action="/success">
+          <form 
+            name="contact" 
+            method="POST" 
+            data-netlify="true" 
+            onSubmit={handleSubmit}
+          >
             <input type="hidden" name="form-name" value="contact" />
             
             <div className="grid md:grid-cols-2 gap-6 mb-6">
