@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Services from './components/Services';
 import About from './components/About';
+import Success from './pages/Success';
 
 const Home = () => (
   <>
@@ -30,6 +31,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/politica-de-privacidad" element={<PrivacyPolicy />} />
           <Route path="/terminos" element={<Terms />} />
+
+          <Route path="/success" element={<Success />} />
         </Routes>
         <Footer />
       </div>
