@@ -86,9 +86,9 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <span className="text-gray-500 text-sm cursor-default">
+                <Link to="/politica-de-cookies" className="text-gray-300 hover:text-white transition-colors">
                   Política de Cookies
-                </span>
+                </Link>
               </li>
             </ul>
           </div>

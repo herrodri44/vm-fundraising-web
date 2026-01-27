@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const PrivacyPolicy = () => {
   useEffect(() => {
@@ -11,62 +12,77 @@ const PrivacyPolicy = () => {
         <h1 className="text-4xl font-bold text-vm-navy mb-8 border-b-4 border-vm-gold pb-4 inline-block">
           Política de Privacidad
         </h1>
+        
+        <p className="text-lg text-gray-600 mb-8 italic">
+          [cite_start]"Sus datos seguros" [cite: 15]
+        </p>
 
-        <div className="space-y-6 text-gray-700 leading-relaxed text-justify">
-          <p className="text-sm text-gray-500 italic">
-            Última actualización: {new Date().toLocaleDateString()}
-          </p>
-
+        <div className="space-y-8 text-gray-700 leading-relaxed text-justify">
+          
           <section>
-            <h2 className="text-2xl font-bold text-vm-navy mb-4">1. Responsable del Tratamiento</h2>
             <p>
-              En cumplimiento del Reglamento General de Protección de Datos (RGPD) y la Ley Orgánica de Protección de Datos y Garantía de Derechos Digitales (LOPDGDD), le informamos que los datos personales facilitados a través de este sitio web serán tratados por:
+              En Europa y en España existen normas de protección de datos destinadas a garantizar su seguridad y privacidad. 
+              [cite_start]Por ello, VM FUNDRAISING S.L. desea que entienda claramente qué hace con su información personal[cite: 16, 17].
             </p>
-            <ul className="list-disc pl-6 mt-2 space-y-1">
-              <li><strong>Razón Social:</strong> VM Fundraising S.L.</li>
-              <li><strong>CIF:</strong> B-67666230</li>
-              <li><strong>Domicilio Social:</strong> Avenida Xixona 40, Alicante, España</li>
-              <li><strong>Email de contacto:</strong> Administracion@vmfundraising.com</li>
-            </ul>
+          </section>
+
+          <section className="bg-blue-50 p-6 rounded-xl border border-blue-100">
+            <h2 className="text-xl font-bold text-vm-navy mb-4 flex items-center">
+              🛡️ Responsable del Tratamiento
+            </h2>
+            <p className="mb-2"><strong>VM FUNDRAISING S.L.</strong></p>
+            [cite_start]<p>Avenida Xixona, 40 - 03010 Alicante (Alicante) [cite: 19]</p>
+            [cite_start]<p>Correo electrónico: contacto@vmfundraising.es [cite: 19]</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-vm-navy mb-4">2. Finalidad del Tratamiento</h2>
-            <p>Sus datos personales serán utilizados para las siguientes finalidades:</p>
-            <ul className="list-disc pl-6 mt-2 space-y-1">
-              <li>Responder a las consultas planteadas a través del formulario de contacto.</li>
-              <li>Enviar información comercial sobre nuestros servicios, siempre que haya dado su consentimiento expreso.</li>
-              <li>Gestión administrativa y comercial de la relación con nuestros clientes.</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-bold text-vm-navy mb-4">3. Legitimación</h2>
+            <h2 className="text-2xl font-bold text-vm-navy mb-4">Finalidad</h2>
             <p>
-              La base legal para el tratamiento de sus datos es el <strong>consentimiento</strong> del interesado, otorgado mediante la aceptación explícita de esta política de privacidad al enviar el formulario de contacto (casilla de verificación "He leído y acepto...").
+              Tratamos sus datos para gestionar el contacto, resolver consultas y prestar los servicios contratados. 
+              También podrán usarse para informarle sobre actividades relacionadas con la captación de fondos y proyectos 
+              [cite_start]sociales, siempre que haya prestado su consentimiento[cite: 21, 22].
             </p>
           </section>
-          <section>
 
-            <h2 className="text-2xl font-bold text-vm-navy mb-4">4. Destinatarios de los datos</h2>
+          <section>
+            <h2 className="text-2xl font-bold text-vm-navy mb-4">Legitimación</h2>
             <p>
-              Sus datos no se cederán a terceros, salvo obligación legal. No obstante, para el funcionamiento de la web, utilizamos proveedores de servicios tecnológicos (como servicios de hosting y gestión de formularios) que pueden tratar los datos en calidad de Encargados del Tratamiento, siempre bajo estándares de seguridad adecuados.
+              El tratamiento de sus datos se basa en el <strong>consentimiento</strong> de la persona interesada y/o la ejecución 
+              [cite_start]de un contrato o relación precontractual[cite: 24].
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-vm-navy mb-4">5. Derechos del Usuario</h2>
-            <p>Usted puede ejercer en cualquier momento sus derechos de:</p>
-            <ul className="list-disc pl-6 mt-2 space-y-1">
-              <li><strong>Acceso:</strong> Saber qué datos tenemos suyos.</li>
-              <li><strong>Rectificación:</strong> Corregir datos erróneos.</li>
-              <li><strong>Supresión:</strong> Solicitar el borrado de sus datos.</li>
-              <li><strong>Oposición y Limitación:</strong> Oponerse al tratamiento o limitarlo.</li>
-            </ul>
-            <p className="mt-2">
-              Para ejercer estos derechos, envíe un correo electrónico a [EMAIL DE CONTACTO] adjuntando una copia de su DNI.
+            <h2 className="text-2xl font-bold text-vm-navy mb-4">Destinatarios</h2>
+            <p>
+              [cite_start]No se cederán datos a terceros salvo obligación legal[cite: 26].
             </p>
           </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-vm-navy mb-4">Sus Derechos</h2>
+            <p>
+              Puede ejercer los derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad mediante 
+              [cite_start]escrito a VM FUNDRAISING S.L., Avenida Xixona, 40 - 03010 Alicante, o al correo contacto@vmfundraising.es[cite: 28].
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-vm-navy mb-4">Conservación</h2>
+            <p>
+              [cite_start]Los datos se mantendrán mientras exista relación o sea necesario para el cumplimiento de obligaciones legales[cite: 30].
+            </p>
+          </section>
+
+          <section className="border-t pt-6 mt-8">
+            <h3 className="text-xl font-bold text-vm-navy mb-3">Compromiso con la Protección de Datos</h3>
+            <p>
+              La Dirección de VM FUNDRAISING S.L. asume el compromiso de cumplir con el Reglamento (UE) 2016/679 (RGPD) 
+              y la Ley Orgánica 3/2018 (LOPDGDD), implantando medidas técnicas y organizativas para garantizar la 
+              [cite_start]confidencialidad, integridad y disponibilidad de la información tratada[cite: 34].
+            </p>
+          </section>
+
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Terms from './pages/Terms';
+import CookiesPolicy from './pages/CookiesPolicy';
 
 import Hero from './components/Hero';
 import ParallaxSection from './components/ParallaxSection';
@@ -31,6 +32,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/politica-de-privacidad" element={<PrivacyPolicy />} />
           <Route path="/terminos" element={<Terms />} />
+          <Route path="/politica-de-cookies" element={<CookiesPolicy />} />
 
           <Route path="/success" element={<Success />} />
         </Routes>
