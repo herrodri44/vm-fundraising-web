@@ -11,7 +11,7 @@ const Hero = () => {
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
       >
-        <source src="/videos/video_captador.mp4" type="video/mp4" />
+        <source src="/videos/captadores_alicante.mp4" type="video/mp4" />
       </video>
       <div className="absolute top-0 left-0 w-full h-full bg-vm-navy/70 z-10"></div>
 
