@@ -55,7 +55,7 @@ const Services = () => {
         
         {/* --- SECCIÓN 1: QUÉ OFRECEMOS --- */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-vm-navy mb-4">¿Qué ofrecemos?</h2>
+          <h3 className="text-4xl font-bold text-vm-navy mb-4">¿Qué ofrecemos?</h3>
           <div className="w-24 h-1 bg-vm-gold mx-auto rounded-full"></div>
         </div>
 
@@ -72,7 +72,7 @@ const Services = () => {
               <div className="mb-6 inline-flex items-center justify-center w-16 h-16 rounded-full bg-vm-navy/5 text-vm-navy group-hover:bg-vm-navy group-hover:text-vm-gold transition-colors duration-300">
                 {item.icon}
               </div>
-              <h3 className="text-xl font-bold text-vm-navy mb-3">{item.title}</h3>
+              <h2 className="text-xl font-bold text-vm-navy mb-3">{item.title}</h2>
               <p className="text-gray-600 leading-relaxed">{item.description}</p>
             </motion.div>
           ))}
@@ -98,7 +98,7 @@ const Services = () => {
                 <div className="mb-4 p-3 bg-vm-light rounded-lg text-vm-gold">
                   {val.icon}
                 </div>
-                <h4 className="text-lg font-bold text-vm-navy mb-2">{val.title}</h4>
+                <h2 className="text-lg font-bold text-vm-navy mb-2">{val.title}</h2>
                 <p className="text-gray-600 text-sm leading-relaxed">{val.text}</p>
               </motion.div>
             ))}

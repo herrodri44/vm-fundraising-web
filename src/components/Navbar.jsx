@@ -40,7 +40,7 @@ const Navbar = () => {
           
           {/* 1. LOGO */}
           <div className="shrink-0 flex items-center cursor-pointer" onClick={handleLogoClick}>
-            <img className="h-12 w-auto md:h-16" src="/images/logo-vm.png" alt="VM Fundraising" />
+            <img className="h-12 w-auto md:h-16" src="/images/logo-vm.png" alt="Logotipo de VM Fundraising Agencia de Captación" />
           </div>
 
           {/* 2. MENU ESCRITORIO */}

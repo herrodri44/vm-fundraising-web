@@ -10,29 +10,34 @@ const Hero = () => {
         muted
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        poster="/images/poster-hero.png"
       >
         <source src="/videos/captadores_alicante.mp4" type="video/mp4" />
+        <img 
+          src="/images/poster-hero.png" 
+          alt="Equipo de VM Fundraising realizando captación de socios en las calles de Alicante" 
+        />
       </video>
       <div className="absolute top-0 left-0 w-full h-full bg-vm-navy/70 z-10"></div>
 
       <div className="relative z-20 flex flex-col items-center justify-center h-full text-center px-4">
-        <motion.h1 
+        <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="text-4xl md:text-6xl font-bold text-white mb-4"
         >
           Juntos lo hacemos <span className="text-vm-gold">posible</span>
-        </motion.h1>
+        </motion.div>
         
-        <motion.p 
+        <motion.h1 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
           className="text-lg md:text-xl text-gray-200 max-w-2xl mb-8"
         >
           Estrategias de recaudación de fondos y marketing que conectan tu misión con el mundo.
-        </motion.p>
+        </motion.h1>
 
         <a 
           href="#contacto" 

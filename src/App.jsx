@@ -1,5 +1,6 @@
 // src/App.jsx
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Terms from './pages/Terms';
 import CookiesPolicy from './pages/CookiesPolicy';
@@ -12,6 +13,7 @@ import Navbar from './components/Navbar';
 import Services from './components/Services';
 import About from './components/About';
 import Success from './pages/Success';
+
 
 const Home = () => (
   <>
@@ -26,6 +28,14 @@ const Home = () => (
 function App() {
   return (
     <Router>
+      <Helmet>
+        <title>Agencia de Fundraising y Captación de Socios | VM Fundraising</title>
+        <meta 
+          name="description" 
+          content="Especialistas en captación de fondos Face to Face para ONGs. Aumentamos tus socios con campañas éticas y resultados medibles." 
+        />
+      </Helmet>
+
       <div className="font-sans text-gray-800">
         <Navbar />
         <Routes>

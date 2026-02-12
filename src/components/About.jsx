@@ -23,6 +23,7 @@ const About = () => {
                 src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
                 alt="Equipo VM Fundraising" 
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-vm-navy/10 hover:bg-transparent transition-colors duration-500"></div>
             </div>
